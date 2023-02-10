@@ -15,9 +15,10 @@ function New () {
                 />
                 <label htmlFor='image'>Image</label>
                 <input
-                    type='text'
+                    type='url'
                     name='image'
                     id='image'
+                    title='http:// or https://'
                 />
                 <label htmlFor='hasGluten'>Has Gluten?</label>
                 <input 
