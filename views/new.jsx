@@ -31,7 +31,7 @@ function New () {
                 <input type='submit' />
             </form>
             <div className='backButton'>
-                <a href='/breads'><button>Go back to the index</button></a>
+                <a href='/breads'><button className='btn'>Go back to the index</button></a>
             </div>
         </Default>
     )

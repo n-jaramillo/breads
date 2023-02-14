@@ -1,9 +1,88 @@
 body {
+    background-color: #393c45;
+    margin: 30px;
+}
+
+.wrapper {
     background-color: floralwhite;
+    margin: 30px;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.container {
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
 }
 
 img {
     width: 50%;
     display: block;
-    margin: auto;
+    margin: 10px auto;
+    border-radius: 10px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: bold;
+    text-align: center;
+    color: darkgoldenrod;
+}
+
+.breadHeader {
+    color: brown;
+}
+
+p {
+    text-align: center;
+}
+
+ul li .breadInfo {
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul li {
+    margin: 10px;
+}
+
+ul a {
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 5px;
+    border: 1px solid burlywood;
+    background-color: burlywood;
+    color: brown;
+    border-radius: 10px;
+}
+
+.btn {
+    margin: 0px 10px;
+    min-width: 150px;
+    background-color: wheat;
+}
+
+input[type=submit] {
+    background-color: bisque;
+    min-width: 150px;
+}
+
+input[type=submit].deleteBtn {
+    background-color: brown;
+    color: white;
+    min-width: 150px;
+    display: block;
+    margin: 0 auto;
+}
+
+form {
+    margin: 10px;
 }
