@@ -9,9 +9,9 @@ function Show({ bread, index }) {
             <h2>Show Page</h2>
             <h3 className='breadHeader'>{bread.name}</h3>
             <p>
-                Bread Ingredients: 
+                {/* Bread Ingredients: 
                 <ul className='breadInfo'>
-                    {
+                        {
                         bread.ingredientList.map((ingredients) => {
                             return (
                                 <li>
@@ -19,9 +19,9 @@ function Show({ bread, index }) {
                                 </li>
                             )
                         })
-                    }
-                </ul>
-                It 
+                    } 
+                </ul> */}
+                It
                 {
                     bread.hasGluten
                         ? <span> does </span>
