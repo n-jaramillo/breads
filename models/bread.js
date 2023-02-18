@@ -15,6 +15,10 @@ const breadSchema = new Schema({
     }
 })
 
+breadSchema.methods.getBakedBy = function(){
+    return `${this.name} was baked with love by ${this.baker}`
+}
+
 // create model with schema
 const Bread = mongoose.model('Bread', breadSchema)
 
