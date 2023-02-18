@@ -64,6 +64,12 @@ ul a {
     border-radius: 10px;
 }
 
+ul .bakedBy {
+    margin-top: -10px;
+    color: gray;
+    font-style: italic;
+}
+
 .btn {
     margin: 0px 10px;
     min-width: 150px;
