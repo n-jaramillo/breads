@@ -49,7 +49,7 @@ breads.get('/:id', (req, res) => {
             })
         })
         .catch(err => {
-            res.render('404')
+            res.render('404', {msg: 'Could not find bread'})
         })
 })
 
@@ -64,7 +64,12 @@ breads.post('/', (req, res) => {
         req.body.hasGluten = false
     }
     Bread.create(req.body)
-    res.redirect('/breads')
+        .then(() => {
+            res.redirect('/breads')
+        })
+        .catch(err => {
+            res.render('404', {msg: 'Could not create bread'})
+        })
 })
 
 
