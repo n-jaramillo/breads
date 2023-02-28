@@ -1,8 +1,8 @@
 const express = require('express')
-const bread = require('../models/bread.js')
 const breads = express.Router()
 const Bread = require('../models/bread.js')
 const breadSeeds = require('../models/breads_seed.js')
+const Baker = require('../models/baker.js')
 
 // INDEX
 breads.get('/', (req, res) => {
@@ -17,7 +17,12 @@ breads.get('/', (req, res) => {
 
 // NEW
 breads.get('/new', (req, res) => {
-    res.render('new')
+    Baker.find()
+        .then(foundBakers => {
+            res.render('new', {
+                bakers: foundBakers
+            })
+        })
 })
 
 // CREATE MANY
@@ -49,7 +54,7 @@ breads.get('/:id', (req, res) => {
             })
         })
         .catch(err => {
-            res.render('404', {msg: 'Could not find bread'})
+            res.render('404', { msg: 'Could not find bread' })
         })
 })
 
@@ -68,7 +73,7 @@ breads.post('/', (req, res) => {
             res.redirect('/breads')
         })
         .catch(err => {
-            res.render('404', {msg: 'Could not create bread'})
+            res.render('404', { msg: 'Could not create bread' })
         })
 })
 
