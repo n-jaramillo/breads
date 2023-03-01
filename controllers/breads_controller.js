@@ -7,6 +7,7 @@ const Baker = require('../models/baker.js')
 // INDEX
 breads.get('/', (req, res) => {
     Bread.find()
+        .populate('baker')
         .then(foundBreads => {
             res.render('index', {
                 breads: foundBreads,
@@ -35,20 +36,23 @@ breads.get('/data/seed', (req, res) => {
 
 // EDIT 
 breads.get('/:id/edit', (req, res) => {
-    Bread.findById(req.params.id)
-        .then(foundBread => {
-            res.render('edit', {
-                bread: foundBread
-            })
+    Baker.find()
+        .then(foundBakers => {
+            Bread.findById(req.params.id)
+                .then(foundBread => {
+                    res.render('edit', {
+                        bread: foundBread,
+                        bakers: foundBakers
+                    })
+                })
         })
 })
 
 // SHOW
 breads.get('/:id', (req, res) => {
     Bread.findById(req.params.id)
+        .populate('baker')
         .then(foundBread => {
-            const bakedBy = foundBread.getBakedBy()
-            console.log(bakedBy)
             res.render('show', {
                 bread: foundBread
             })
