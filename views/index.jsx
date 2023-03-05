@@ -1,5 +1,5 @@
-const React = require('react')
-const Default = require('./layouts/default')
+import React from 'react'
+import Default from './layouts/default'
 
 function Index({ breads, bakers, title }) {
     return (
@@ -41,4 +41,4 @@ function Index({ breads, bakers, title }) {
     )
 }
 
-module.exports = Index
+export default Index

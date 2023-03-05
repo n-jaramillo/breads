@@ -1,5 +1,5 @@
-const React = require('react')
-const Default = require('./layouts/default')
+import React from 'react'
+import Default from './layouts/default'
 
 function Edit({ bread, bakers }) {
     return (
@@ -43,4 +43,4 @@ function Edit({ bread, bakers }) {
     )
 }
 
-module.exports = Edit
+export default Edit

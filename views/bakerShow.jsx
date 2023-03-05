@@ -1,5 +1,5 @@
-const React = require('react')
-const Default = require('./layouts/default')
+import React from 'react'
+import Default from './layouts/default'
 
 function Show({ baker }) {
     return (
@@ -26,4 +26,4 @@ function Show({ baker }) {
     )
 }
 
-module.exports = Show
+export default Show

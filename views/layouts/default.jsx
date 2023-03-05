@@ -1,4 +1,4 @@
-const React = require('react')
+import React from 'react'
 
 function Default(html) {
     return (
@@ -24,4 +24,4 @@ function Default(html) {
     )
 }
 
-module.exports = Default
+export default Default

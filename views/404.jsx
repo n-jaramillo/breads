@@ -1,5 +1,5 @@
-const React = require('react')
-const Default = require('./layouts/default')
+import React from 'react'
+import Default from './layouts/default'
 
 function error404 ({msg}) {
     return (
@@ -10,4 +10,4 @@ function error404 ({msg}) {
     )
 }
 
-module.exports = error404
+export default error404

@@ -1,5 +1,5 @@
-const React = require('react')
-const Default = require('./layouts/default')
+import React from 'react'
+import Default from './layouts/default'
 
 function Show({ bread }) {
     // Confirm we are getting our bread data in the terminal
@@ -40,4 +40,4 @@ function Show({ bread }) {
     )
 }
 
-module.exports = Show
+export default Show
