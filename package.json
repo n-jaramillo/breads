@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "Expresss Full CRUD with SSR JSX",
   "main": "server.js",
+  "engines": {
+    "node": "18.x"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
@@ -26,5 +29,8 @@
     "mongoose": "^6.9.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@vercel/node": "^2.9.10"
   }
 }
