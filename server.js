@@ -2,7 +2,6 @@
 const express = require('express')
 const methodOverride = require('method-override')
 const mongoose = require('mongoose')
-const baker = require('./controllers/bakers_controllers.js')
 
 // CONFIGURATION
 require('dotenv').config()
