@@ -1,7 +1,7 @@
 {
   "name": "breads",
   "version": "1.0.0",
-  "description": "Expresss Full CRUD with SSR JSX",
+  "description": "Express Full CRUD with SSR JSX",
   "main": "server.js",
   "engines": {
     "node": "16.x"
