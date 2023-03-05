@@ -8,8 +8,12 @@
     ],
     "routes": [
         {
+            "src": "/",
+            "dest": "/server.js"
+        },
+        {
             "src": "/(.*)",
-            "dest": "/",
+            "dest": "/server.js",
             "methods": [
                 "GET",
                 "DELETE",
